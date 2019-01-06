@@ -20,8 +20,7 @@ export default class ViaApp extends React.Component {
       const drivers = await response.json()
       this.setState({ drivers, driversListLoading: false, filteredDrivers: drivers })
     } catch (error) {
-      this.setState({ driversListLoading: false })
-      this.setState({ errorMessage: error.message })
+      this.setState({ driversListLoading: false, errorMessage: error.message })
     }
   }
   filterDrivers = (event) => {
@@ -37,7 +36,7 @@ export default class ViaApp extends React.Component {
         <div className="container">
           {this.state.driversListLoading && <div className="spinner"></div>}
           {!this.state.driversListLoading && <DriversList list={this.state.filteredDrivers} />}
-          {!this.state.driversListLoading && this.state.errorMessage && <div>{this.state.errorMessage}</div> }
+          {!this.state.driversListLoading && this.state.errorMessage && <div>{this.state.errorMessage}</div>}
         </div>
       </div>
     )
