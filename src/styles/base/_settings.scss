@@ -1,0 +1,45 @@
+//Colors
+$blue: #20B8EA;
+$light-blue: #F2F1F2;
+$white: #ffffff;
+
+//Sizes
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 2rem;
+$xl-size: 3.2rem;
+
+$desktop-breakpoint: 55rem;
+
+//Icons 
+.magnifier-icon {
+  background: url('/images/magnifying_icon.svg');
+  height: 24px;
+  width: 24px;
+}
+
+.spinner {
+  display: inline-block;
+  height: 65px;
+  width: 65px;
+}
+
+.spinner:after {
+  animation: spinning-ring 1.2s linear infinite;
+  border: 5px solid $blue;
+  border-color: $blue transparent $blue transparent;
+  border-radius: 50%;
+  content: " ";
+  display: block;
+  height: 45px;
+  width: 45px;
+}
+
+@keyframes spinning-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

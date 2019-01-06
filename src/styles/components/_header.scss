@@ -1,0 +1,38 @@
+.header {
+  align-items: center;
+  background: $blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2*($xl-size);
+  padding: $m-size;
+}
+
+.header__title {
+  font-size: $xl-size;
+  margin: 0;
+}
+
+.header--input__wrapper {
+  position: relative;
+}
+
+.header--input__wrapper > .magnifier-icon {
+  position: absolute;
+  right: $m-size;
+  top: 14px;
+}
+
+.header--input {
+  border-radius: $xl-size;
+  border-style: none;
+  color: $blue;
+  padding: $m-size;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .header {
+    flex-direction: row;
+  }
+}

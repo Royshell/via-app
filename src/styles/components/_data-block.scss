@@ -1,0 +1,43 @@
+.data-block {
+  background-color: $white;
+  color: $blue;
+  font-size: $s-size;
+  height: 40rem;  
+  line-height: $l-size;
+}
+
+.data-block__container {
+  padding: $m-size;
+}
+
+.data-block__imgs-wrapper {
+  margin-bottom: $xl-size;
+  position: relative;
+}
+
+.data-block__main-img {
+  height: 25rem;
+  width: 25rem;
+}
+
+.data-block__type-img {
+  bottom: -$m-size;
+  left: $m-size;
+  position: absolute;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .data-block__main-img {
+    height: 17rem;
+    width: 100%;
+  }
+
+  .data-block:hover .data-block__main-img {
+    height: 14rem;
+  }
+
+  .data-block {
+    height: 32rem;
+    max-width: 22rem;
+  }
+}

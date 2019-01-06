@@ -1,0 +1,37 @@
+{
+  "name": "via-app",
+  "version": "1.0.0",
+  "description": "Via's assigment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "serve": "live-server public/",
+    "build": "webpack",
+    "dev-server": "webpack-dev-server --hot --open"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/plugin-transform-async-to-generator": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^2.0.0",
+    "dev-server": "^0.0.2",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.11.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^6.0.0",
+    "run": "^1.4.0",
+    "sass-loader": "^7.1.0",
+    "send": "^0.16.2",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}

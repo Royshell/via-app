@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 95rem;
+  margin: 0 auto;
+}
+
+.container__grid {
+  display: grid;
+  grid-gap: $s-size;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .container__grid {
+    grid-gap: $m-size;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
